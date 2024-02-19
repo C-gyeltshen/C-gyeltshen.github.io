@@ -1,5 +1,5 @@
 ---
-Title: DBS101_Flipped_Class_1
+Title: DBS101 Flipped Class_1
 categories: [DBS101, Flipped_Class1]
 tags: [DBS101]
 ---
