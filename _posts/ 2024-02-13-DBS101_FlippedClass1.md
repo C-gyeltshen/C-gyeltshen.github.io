@@ -1,6 +1,5 @@
 ---
-title: DBS101 Flipped Class 1
-date: 2024-02-13 08:33:45 +/-TTTT
+Title: DBS101 Flipped Class 1
 categories: [DBS101, Flipped_Class1]
 tags: [DBS101]
 ---
