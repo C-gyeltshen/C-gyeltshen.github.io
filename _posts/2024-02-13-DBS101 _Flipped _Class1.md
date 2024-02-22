@@ -4,11 +4,6 @@ categories: [DBS101, Flipped_Class1]
 tags: [DBS101]
 ---
 
----
-Title: DBS101 Flipped Class 1
-categories: [DBS101, Flipped_Class1]
-tags: [DBS101]
----
 ## Topic : Database Administrators and Database Users
 
 ### Database Administrator (DBA)
