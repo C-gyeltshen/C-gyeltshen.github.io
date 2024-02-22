@@ -4,9 +4,9 @@ categories: [DBS101, Flipped_Class1]
 tags: [DBS101]
 ---
 
-## Topic : Database Administrators and Database Users
+# Topic : Database Administrators and Database Users
 
-### Database Administrator (DBA)
+## Database Administrator (DBA)
 
 A Database Administrator is an IT professional who is in charge of creating, maintaining a secure database, and giving access to authorized users.
 
@@ -16,7 +16,7 @@ A Database Administrator is an IT professional who is in charge of creating, mai
  - Maintains a smooth flow of data between the database and the service provider.
  - Creates backup and recovery plans to prevent the loss of data in emergency cases.
 
-### Database Users:
+## Database Users:
 
 - Any person who uses a database and avails benefits from the database is known as a database user in DBMS (Database Management System).
 
