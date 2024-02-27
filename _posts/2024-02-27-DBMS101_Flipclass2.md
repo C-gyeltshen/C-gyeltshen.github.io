@@ -33,9 +33,13 @@ Primary keys uniquely identify each record in an entity. For example, in a patie
 #### ERD Diagram for E-Health Record (Steps):
 
 1.Listed all the entities such as patients, appointments, doctors, medical conditions, and medications.
+
 2.Listed all the attributes that each entity must have.
+
 3.Designed the flow of entities.
+
 4.Drew the relationships between entities.
+
 5.Determined the possible cardinality and added all the cardinality signs in every relationship.
 
 
