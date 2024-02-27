@@ -5,7 +5,7 @@ tags: [DBS101]
 ---
 
 # Topic : Entity Relationship Modeling for E-Health Record
-=======================================================================================================
+============================================================================================
 
 ## Entity Relationship Model (My understanding of ERD)
 
@@ -28,6 +28,15 @@ Relationships show how entities are connected to each other using lines.
 
 #### 5.Primary Keys:
 Primary keys uniquely identify each record in an entity. For example, in a patient entity, a CID number is a unique property that represents an individual person.
+
+
+#### ERD Diagram for E-Health Record (Steps):
+
+1.Listed all the entities such as patients, appointments, doctors, medical conditions, and medications.
+2.Listed all the attributes that each entity must have.
+3.Designed the flow of entities.
+4.Drew the relationships between entities.
+5.Determined the possible cardinality and added all the cardinality signs in every relationship.
 
 
 
