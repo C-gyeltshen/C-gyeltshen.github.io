@@ -38,6 +38,8 @@ Primary keys uniquely identify each record in an entity. For example, in a patie
 4.Drew the relationships between entities.
 5.Determined the possible cardinality and added all the cardinality signs in every relationship.
 
+![image](/Users/chimigyeltshen/Desktop/Chimi Gyeltshen/Entertanment/yes.webp)
+
 
 
 
