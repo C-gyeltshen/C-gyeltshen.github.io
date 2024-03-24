@@ -29,16 +29,15 @@ There are many types of normal forms, and some of the normal forms that I have l
 * First Normal Form disallows multi-valued attributes, composite attributes, and their combinations.
 
 
-    | EMP_ID      |  EMP_NAME     |  EMP_PHONE |           
-    |-------------|:-------------:|-----------:|
-    |     1       |  Chimi        | 17895216   |
-    |             |               | 77207234   |
-    |     2       |    Sonam      | 17851105   |
-    |     3       | Rinchen       | 17486374   |
+    | EMP_ID      |  EMP_NAME     |       EMP_PHONE         |           
+    |-------------|:-------------:|------------------------:|
+    |     1       |  Chimi        | 17895216,77207234       |
+    |     2       |    Sonam      | 17851105                |
+    |     3       | Rinchen       | 17486374                |
     **Table 1**
 
 
-   ###  ***TO:***
+    ***TO:***
 
     | EMP_ID      |  EMP_NAME     |  EMP_PHONE |           
     |:-----------:|:------------:|:-----------:|
