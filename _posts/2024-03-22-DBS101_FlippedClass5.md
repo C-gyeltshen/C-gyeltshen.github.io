@@ -16,11 +16,11 @@ A **Normal Form** is a set of guidelines or rules that define how data should be
 There are many types of normal forms, and some of the normal forms that I have learned are:
 
 1. First and Second Normal Form
-2. Boyce-Codd Normal Form (BCNF)
-3. Third Normal Form
+2. Third Normal Form
+3. Boyce-Codd Normal Form (BCNF)
 4. Fourth Normal Form
 
-## First Normal Form and Second Normal Form 
+## 1. First Normal Form and Second Normal Form 
 
 ### First Normal Form
 
@@ -44,7 +44,7 @@ There are many types of normal forms, and some of the normal forms that I have l
     |     1       |  Chimi        | 77207234   |
     |     2       |    Sonam      | 17851105   |
     |     3       | Rinchen       | 17486374   |
-    
+
     **Table 2**
 
 * Multi valued attribute EMP_PHONE got decomposed after normalization.
@@ -54,6 +54,8 @@ There are many types of normal forms, and some of the normal forms that I have l
 * To be in the **second normal form**, a relation must be in the **first normal form**, and the relation must not contain any **partial dependency** of attributes toward the primary key.
 
 * In the second normal form, all non-key attributes should be fully functionally dependent on the primary key.
+
+    ![primary key and non key attribute](https://s3.studytonight.com/curious/uploads/pictures/1689067555-.png)
 
     |  	   Teacher_id       |  	 Subject          |  	  Teacher_age            |
     |:---------------------:|:-------------------:|:----------------------------:|
@@ -89,3 +91,48 @@ There are many types of normal forms, and some of the normal forms that I have l
     |  5	                |          34              |
     |  6	                |         45               |
     |  7	                |  	      65               |
+
+## 2. Third Normal Form
+
+A table is said to be in the Third Normal Form when,
+1. It satisfies the First Normal Form and the Second Normal form.
+2. And, it doesn't have Transitive Dependency.
+
+***Transitive dependency ?***
+
+* Transitive dependency occurs when a non-prime attribute ( attribute that is not part of any candidate key) depends on another non-prime attribute, rather than directly on a candidate key.
+
+**Example**
+
+Let's say we have a table called Employee with attributes (Employee_ID, Employee_Name, Department, Manager). Here, Employee_ID is the primary key, and Manager represents the manager of each employee.
+
+| Employee_ID | Employee_Name | Department | Manager   |
+|-------------|---------------|------------|-----------|
+| 1           | Chimi         | IT         | Sonam     |
+| 2           | Sonam         | HR         | Rinchen   |
+| 3           | Rinchen       | Finance    | Tshering  |
+
+* Manager depends on the Department and Department depends on Employee_ID, then we have a transitive dependency because Manager depends indirectly on Employee_ID through the Department.
+
+**To solve transitive dependency**
+
+1. Decomposed Tables:
+
+Employee:
+
+| Employee_ID | Employee_Name |
+|-------------|---------------|
+| 1           | Chimi         |
+| 2           | Sonam         |
+| 3           | Rinchen       |
+
+Department:
+
+| Department | Manager   |
+|------------|-----------|
+| IT         | Sonam     |
+| HR         | Rinchen   |
+| Finance    | Tshering  |
+
+## 3. Boyce-Codd Normal Form (BCNF)
+
