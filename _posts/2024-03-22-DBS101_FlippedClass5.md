@@ -1,3 +1,9 @@
+---
+Title: DBS101 Flipped Class 5
+categories: [DBS101, Flipped_Class_4]
+tags: [DBS101]
+---
+
 # Normal Form
 
 
