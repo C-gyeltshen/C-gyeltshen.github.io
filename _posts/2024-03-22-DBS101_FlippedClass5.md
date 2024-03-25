@@ -49,7 +49,7 @@ There are many types of normal forms, and some of the normal forms that I have l
 
 * Multi valued attribute EMP_PHONE got decomposed after normalization.
 
-### Second Normal Form
+### Second Normal Form.
 
 * To be in the **second normal form**, a relation must be in the **first normal form**, and the relation must not contain any **partial dependency** of attributes toward the primary key.
 
@@ -59,8 +59,8 @@ There are many types of normal forms, and some of the normal forms that I have l
 
     |  	   Teacher_id       |  	 Subject          |  	  Teacher_age            |
     |:---------------------:|:-------------------:|:----------------------------:|
-    |  3	                |      English        |         34                 	 |
-    |  	4                   |  	   Dzongkha       |  	     56                  |
+    |   3	                |      English        |         34                 	 |
+    | 	4                   |  	   Dzongkha       |  	     56                  |
     |  5	                |      Chemistry      |  	     34                  |
     |  6	                |      physics        |          45                	 |
     |  7	                |  	   Maths          |  	     65                  |
@@ -98,7 +98,7 @@ A table is said to be in the Third Normal Form when,
 1. It satisfies the First Normal Form and the Second Normal form.
 2. And, it doesn't have Transitive Dependency.
 
-***Transitive dependency ?***
+**Transitive dependency ?**
 
 * Transitive dependency occurs when a non-prime attribute ( attribute that is not part of any candidate key) depends on another non-prime attribute, rather than directly on a candidate key.
 
