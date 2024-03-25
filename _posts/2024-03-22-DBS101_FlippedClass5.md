@@ -136,3 +136,77 @@ Department:
 
 ## 3. Boyce-Codd Normal Form (BCNF)
 
+**Functional dependency ?**
+
+A functional dependency in a database refers to a relationship between two attributes in a relation (or table) such that one attribute's value uniquely determines the value of another attribute. It doesn't necessarily have to be between a primary key and a non-key attribute.
+
+**Example of BCNF**
+
+| EmployeeID | Name    | Department |
+|------------|---------|------------|
+| 1          | Nidup   | HR         |
+| 2          | Bob     | IT         |
+| 3          | Wangmo  | HR         |
+
+In this case, EmployeeID serves as the primary key, and Name is functionally dependent on EmployeeID, because given an EmployeeID, there is only one corresponding Name. 
+
+However, Department is not functionally dependent on EmployeeID, as multiple employees can belong to the same department.
+
+* If a relational schema is in BCNF, then all redundancy based on functional dependencies has to be removed. 
+
+* A table is in BCNF if every functional dependency X → Y, where X is the superkey of the table.
+
+| Condition                                                                                                                                                 | Definition                                                                                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| If a relational schema is in BCNF                                                                                                                         | Then all redundancy based on functional dependencies should be removed.                                                                                            |
+| A table is in BCNF                                                                                                                                         | If every functional dependency X → Y, where X is the superkey of the table.                                                                                      |
+
+
+## 4. Fourth Normal Form
+
+* A relation will be in 4NF if it is in Boyce Codd normal form and **Fourth Normal** Form comes into picture when **Multi-valued Dependency** occur in any relation.
+
+**Multi-Valued Dependency ?**
+
+| bike_model | mani_year  | colour   |
+|------------|------------|----------|
+| R15        | 2022       | blck     |
+| R15        | 2022       | red      |
+| bmw        | 2018       | yellow   |
+| bmw        | 2019       | golden   |
+
+* Multivalued dependency occurs when two attributes in a table are independent of each other but, both depend on a third attribute.
+
+
+* Suppose there is a bike manufacturer company which produces two colors(white and black) of each model every year.
+
+* Here columns COLOR and MANUF_YEAR are dependent on BIKE_MODEL and independent of each other.
+
+* In this case, these two columns can be called as multivalued dependent on BIKE_MODEL.
+
+**Decomposed Tables:**
+
+Table 1: bike_model and mani_year
+
+| bike_model | mani_year  |
+|------------|------------|
+| R15        | 2022       |
+| R15        | 2022       |
+| bmw        | 2018       |
+| bmw        | 2019       |
+
+Table 2: bike_model and colour
+
+| bike_model | colour   |
+|------------|----------|
+| R15        | black    |
+| R15        | red      |
+| bmw        | yellow   |
+| bmw        | golden   |
+
+
+We can split the original table into two tables to remove the multi-valued dependency between bike_model and mani_year. Now each table represents a single-valued dependency, ensuring that the database is normalized.
+
+
+
+
