@@ -4,7 +4,7 @@ categories: [DBS101, Flipped_Class_6]
 tags: [DBS101]
 ---
 
-# What is Document based databases ?
+# **Document based databases.**
 
 Document based database is a type of **NoSQl database** which does not use the **relational model to store data**, instead it uses the documents to store the data in the database.
 
@@ -27,7 +27,7 @@ Elements can be accessed by using the index value that is assigned for faster qu
 |4. There are relationships between the tables and it is referred using FOREIGNl  KEYS.|4. There is no dynamic relationship between two documents so documents can be independent of one another.|
 
 
-# What is Key-Value based databases ?
+# **Key-Value based databases.**
 
 * Key value database is another type of database that does not use tables to store data; instead,  every data element in the database is stored in key-value pairs.
 
@@ -60,7 +60,7 @@ Elements can be accessed by using the index value that is assigned for faster qu
 * Since data is accessed directly by its unique key, retrieval times are typically fast and predictable, especially for simple lookup operations 
 
 
-# What is Graph Database?
+# **Graph Database**
 
 * A graph database is a type of database management system (DBMS) specifically designed to store and manage data whose relationships are represented in a graph structure.
 
@@ -84,7 +84,7 @@ Elements can be accessed by using the index value that is assigned for faster qu
 3. Healthcare and Life Science
 
 
-# What is Vector Databases ?
+# **Vector Databases** 
 
 ![db](https://miro.medium.com/v2/resize:fit:1024/1*bg8JUIjbKncnqC5Vf3AkxA.png)
 
@@ -118,7 +118,7 @@ What is high-dimensional vector data?
 3. Large language models (LLMs) and generative AI like ChatGPT
 
 
-# What is Time-series Databases
+# **Time-series Databases**
 
 A time series database (TSDB) is a specialized type of database that is specifically designed to efficiently store, retrieve, and analyze time-stamped or time series data.
 
@@ -138,18 +138,7 @@ Time series databases were primarily focused on looking at financial data, the v
 
 * When an application needs to perform online queries at millisecond timescales and support CPU-efficient ad-hoc queries.
 
-# Column oriented Databases
-
-| Situation                                      | Benefits of Columnar Databases                            |
-|-----------------------------------------------|-----------------------------------------------------------|
-| **Data Filtering**                            | - Faster access: Only necessary columns are accessed.     |
-|                                               | - Efficient processing: Queries focus on relevant data.   |
-|                                               | - Compression: Data is stored efficiently, saving space.  |
-| **Data Aggregation**                          | - Group operations: Ideal for summarizing data.           |
-|                                               | - Speed: Aggregations are faster due to column storage.    |
-|                                               | - Parallel processing: Can handle large datasets easily.  |
-| **Overall**                                   | - Improved performance for analytics and data insights.   |
-|                                               | - Scalability: Suitable for handling large amounts of data.|
+# **Column oriented Databases**
 
 * A columnar database, or column-oriented database, is a type of database management system (DBMS) that organizes and stores data in a column-wise manner, as opposed to traditional row-wise storage used in relational databases.
 
