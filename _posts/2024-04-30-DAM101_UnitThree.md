@@ -12,7 +12,7 @@ In this introduction, we embark on a journey to unravel the mysteries of CNNs, e
 
 Let's dive into the fascinating realm of Convolutional Neural Networks, where pixels transform into insights, and innovation knows no bounds.
 
-![cnn](https://saturncloud.io/images/blog/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way.webp)
+![alt text](../download.jpeg)
 
 ## **Introduction**
 
@@ -22,14 +22,14 @@ The pre-processing required in a ConvNet is much lower as compared to other clas
 
 A ConvNet effectively captures spatial relationships in images through filter application. With fewer parameters and weight reusability, it fits image datasets better.
 
-![example](https://saturncloud.io/images/blog/a-cnn-sequence-to-classify-handwritten-digits.webp)
+![alt text](../a-cnn-sequence-to-classify-handwritten-digits.webp)
 
 
 ## **Why Convolutional Neural Networks over feeding images directly to ANN.**
 
 An image is nothing but a matrix of pixel values so why not flatten the matrix into a vector and feed it to ANN like 
 
-![vector](https://saturncloud.io/images/blog/flattening-of-a-3x3-image-matrix-into-a-9x1-vector.webp)
+![alt text](../flattening-of-a-3x3-image-matrix-into-a-9x1-vector.webp)
 
 In the above case the model might be able to draw patterns easily but what of the input image is big (7680×4320), then the model will take computationally heavy resources and latency will also increase therefore Convolutional neural network is implemented to reduce the spatial dimensions of the input image without losing the image important feature.  
 
@@ -37,7 +37,7 @@ The role of Convolutional neural network is to reduce the images into a form tha
 
 Convolution is a mathematical operation that involves sliding a small matrix (called a kernel or filter) over the input data and computing the element-wise product between the kernel and the overlapped region of the input. 
 
-![kernel](https://saturncloud.io/images/blog/convoluting-a-5x5x1-image-with-a-3x3x1-kernel-to-get-a-3x3x1-convolved-feature.gif)
+![alt text](../convoluting-a-5x5x1-image-with-a-3x3x1-kernel-to-get-a-3x3x1-convolved-feature.gif)
 
 This operation produces a feature map (the end image after convolution )that captures the presence of specific patterns or features in the input data.
 
