@@ -16,7 +16,7 @@ While relational databases offer powerful data management capabilities, creating
 
 We can leverage object-oriented programming (OOP) to create a class named **DiskBlock** that simulates a disk with a fixed block size and a specific number of blocks. This class can manage the data stored within each block.
 
-![alt text](../image/image1.png)
+<!-- ![alt text](../image/image1.png) -->
 
 **Adding Functionality**
 
@@ -27,7 +27,7 @@ Using Python's **def_()** keyword, we define functions within the DiskBlock clas
 * **Deallocating Blocks:** Releases previously allocated blocks, making them available for future use.
 * **Reading Data:** Retrieves data from designated blocks.
 * **Writing Data:** Stores new data within specified blocks.
-    ![alt text](../image/image2.png)
+    <!-- ![alt text](../image/image2.png) -->
 
 By calling these functions with appropriate parameters, we can simulate basic data management operations within the **DiskBlock** object.
 
