@@ -55,4 +55,30 @@ The kernel is a matrix that moves over the input data, performs the dot product 
 
 The output of each layer's kernels is then passed through a non-linear activation function, such as ReLU, to introduce non-linearity into the network and enable it to learn more complex and abstract features .
 
+Images have properties like edges, shapes, and colors. The combination of these properties generates features. Kernels or filters are responsible for detecting these features in an image.
+
+If the image is a grayscale image, then the pixel value will range between 0 and 255 (0 for black and 255 for white).
+
+Grayscale image example. 
+
+![grayscale_image](https://ai.stanford.edu/~syyeung/cvweb/Pictures1/imagematrix.png)
+
+![example](https://i0.wp.com/theailearner.com/wp-content/uploads/2018/10/Capture.png?resize=539%2C238&ssl=1)
+
+Example:
+
+We have an image (5 x 5), a kernel of (3 x 3), and the kernel slides on the image. A new image is generated. The new image generated after the convolution is called the feature map.
+
+![example](https://www.freecodecamp.org/news/content/images/2021/02/activation-map.png)
+
+When the kernel is placed in a new position, it calculates a dot product. The resulting product is placed in the corresponding position in the feature map.
+
+Any image of size (n x n) when convolved with a kernel (f x f) will generate a feature map of size (n - f + 1) x (n - f + 1).
+
+![alt text](../Capture-2024-05-10-143543.png)
+
+Convolution acts as a feature detector or edge detector. It detects all the edges in the input image.
+
+![edge_detection](https://media5.datahacker.rs/2018/10/multiplication_slicice.png)
+
 
