@@ -4,9 +4,9 @@ categories: [DBS101, Flipped_Class8]
 tags: [DBS101]
 ---
 
-# Indexing
+# **Indexing**
 
-##  Indexing of Spatial and Temporal Data 
+##  **Indexing of Spatial and Temporal Data** 
 
 ![image](https://52north.org/wp-content/uploads/2017/12/openlabs_figure_clean.png)
 
@@ -14,7 +14,7 @@ A spatial-temporal index is an advanced index structure where the indexing key i
 
 Indexing spatial and temporal data is a crucial technique for efficiently managing information that has both a location and a time component.
 
-***Break down of the concept : ***
+**Break down of the concept :**
 
 **Spatial data :** This refers to information about the location of objects or events. Examples include positions on a map, sensor readings in a specific area, or delivery zones.
 
@@ -22,7 +22,7 @@ Indexing spatial and temporal data is a crucial technique for efficiently managi
 
 Indexing in spatial and temporal data helps users to quickly retrieve data containing time and location information.
 
-## Bitmap Indices 
+## **Bitmap Indices** 
 
 **What is Bitmap Indexing ?**
 
@@ -54,7 +54,7 @@ Bitmap indexing offers lots of advantages making it important for many reasons.
 
 **Optimized for analytics :** Bitmap Index is particularly useful for analytical workloads that involve querying large datasets and performing complex filtering and aggregation operations.
 
-## Buffer tree 
+## **Buffer tree** 
 
 **What is a buffer tree ?**
 
