@@ -168,7 +168,89 @@ access.
 
 - Committed: Successfully completed.
 
-![model](https://i.imgur.com/b857XSq.png)
+    ![model](https://i.imgur.com/b857XSq.png)
+
+### To understand the **simple transaction model** lets perform some transactions
+
+1. **Active State**
+
+- When the instructions of the transaction are running then the transaction is in active state. 
+- If all the ‘read and write’ operations are performed without any error then it goes to the “partially committed state”; if any instruction fails, it goes to the “failed state”.
+
+- Begain the transaction
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 12.57.55 PM.png>)
+
+- Updating the value of Account_A 
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 1.01.49 PM.png>)
+
+2. **Partially Committed state**
+
+- After completion of all the read and write operation the changes are made in main memory or local buffer. 
+- If the changes are made permanent on the DataBase then the state will change to “committed state” and in case of failure it will go to the “failed state”. 
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 5.50.19 PM.png>)
+
+- Commiting the changes.
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 5.53.11 PM.png>)
+
+3. **Failed to Aborted**
+
+- After entering the Failed state, the transaction can transition to Aborted by rolling back all changes.
+
+- Initial State before transaction.
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.01.39 PM.png>)
+
+- Updating the value in account_B
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.12.21 PM.png>)
+
+- Performing ROLLBACK
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.14.09 PM.png>)
+
+4. **Active to Aborted**
+
+- A transaction can also be explicitly aborted by the user or system, causing a direct transition from Active to Aborted.
+
+- Updating the accounts table by adding a new account **D** and inserting value in account **D**.
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.18.22 PM.png>)
+
+- Performing ROLLBACK
+
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.22.28 PM.png>)
+
+    The Update operation performed to create a new accounts D is ROLLED BACK
+
+5. **Partially Committed to Failed** 
+
+- In some cases, a transaction might move from Partially Committed to Failed if an error is detected after the final statement but before committing.
+
+    **Updating the the accounts table** by creating a new Account_E with balance of 1009
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.28.19 PM.png>)
+
+    **Commiting** the transaction.
+    ![alt text](<../image/Screenshot 2024-05-24 at 6.31.28 PM.png>)
+
+- If a transaction enters the failed state after the
+system determines that the transaction can no longer
+proceed with its normal execution. Such a transaction must be rolled back. Then, it enters he aborted state.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
