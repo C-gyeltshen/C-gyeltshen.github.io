@@ -81,35 +81,35 @@ Steps involved are:
 
 1. Lets create a database called **test_transaction** 
 
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.08.30 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10.png>)
 
 2. Lets create a new table call **accounts**
 
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.12.23 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (1).png>)
 
 3. Inserting values inside the table **accounts**
 
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.13.55 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (2).png>)
 
 4. ***OK! Now lets begain the transaction***
 
-    ![excired](https://media.tenor.com/taqSRWFOkaQAAAAM/kung-fu-panda.gif)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
 
 5. Start Transaction
 
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.27.07 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (4).png>)
     ![oh](https://media.tenor.com/dnqXn34Lf2sAAAAj/frustrated-master-shifu.gif)
 
 6. From the accounts A and B, we will update the balance by either deducting or adding to the previous value.
 
     **Initial**
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.13.55 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (2).png>)
     **After updating**
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.35.41 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (4).png>)
 
 7. Commiting the changes made in both the accounts and after commiting the changes we cannot perform ROLL BACK operation or undo the changes.
 
-    ![alt text](<../image/Screenshot 2024-05-23 at 10.38.36 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (5).png>)
 
 ## Storage Structure in DB
 
@@ -179,22 +179,22 @@ access.
 
 - Begain the transaction
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 12.57.55 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
 
 - Updating the value of Account_A 
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 1.01.49 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.04.50 PM.png>)
 
 2. **Partially Committed state**
 
 - After completion of all the read and write operation the changes are made in main memory or local buffer. 
 - If the changes are made permanent on the DataBase then the state will change to “committed state” and in case of failure it will go to the “failed state”. 
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 5.50.19 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.20.25 PM.png>)
 
 - Commiting the changes.
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 5.53.11 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.14.32 PM.png>)
 
 3. **Failed to Aborted**
 
@@ -202,15 +202,15 @@ access.
 
 - Initial State before transaction.
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.01.39 PM.png>)
+    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
 
 - Updating the value in account_B
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.12.21 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.16.12 PM.png>)
 
 - Performing ROLLBACK
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.14.09 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.23.42 PM.png>)
 
 4. **Active to Aborted**
 
@@ -218,11 +218,11 @@ access.
 
 - Updating the accounts table by adding a new account **D** and inserting value in account **D**.
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.18.22 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.26.00 PM.png>)
 
 - Performing ROLLBACK
 
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.22.28 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.23.42 PM.png>)
 
     The Update operation performed to create a new accounts D is ROLLED BACK
 
@@ -231,15 +231,83 @@ access.
 - In some cases, a transaction might move from Partially Committed to Failed if an error is detected after the final statement but before committing.
 
     **Updating the the accounts table** by creating a new Account_E with balance of 1009
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.28.19 PM.png>)
-
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.28.49 PM.png>)
     **Commiting** the transaction.
-    ![alt text](<../image/Screenshot 2024-05-24 at 6.31.28 PM.png>)
+    ![alt text](<../image/Screenshot 2024-06-01 at 8.14.32 PM.png>)
 
 - If a transaction enters the failed state after the
 system determines that the transaction can no longer
 proceed with its normal execution. Such a transaction must be rolled back. Then, it enters he aborted state.
 
+### Transaction Atomicity and Durability
+
+When a transaction fails and can't continue, it must be undone and marked as aborted. Then, the system has two choices:
+
+- **Restart the Transaction:** This can be done if the failure was due to external issues (like hardware or software errors not caused by the transaction's own logic). The restarted transaction is treated as a new one.
+
+- **Terminate the Transaction:** This should happen if the failure was due to an error in the transaction's own logic. In this case, restarting wouldn't help, so the transaction is just stopped.
+
+### Transaction Isolation and Concurrency
+
+- **Concurrent Transactions:** Multiple transactions run at the same time.
+- **Challenges:** Allowing this can lead to complications and potential inconsistencies in the data.
+- **Easier Solution:** Running transactions one after another (serially) avoids these issues but isn't efficient.
+
+**Reasons for Concurrency:**
+
+- Better Performance: Improved throughput and resource use.
+- Less Waiting: Reduced wait times for transactions.
+
+**Problem:**
+
+Concurrent transactions might interfere with each other, risking data consistency.
+
+**Solution:**
+
+- Schedules: Used to manage the order of transaction execution, ensuring isolation and consistency.
+
+- Concurrency-Control Schemes: Methods to control how transactions interact, ensuring they execute correctly together.
+
+**Ensuring Consistency:**
+
+- Serializable Schedules: These schedules behave as if transactions were run serially, maintaining consistency.
+
+- Database System's Role: Ensures that all transactions follow these safe schedules to keep the database consistent.
+
+
+### Serializability
+
+- **Definition**: A schedule (order of operations) is serializable if it has the same effect as if transactions were executed one after the other in some order.
+- **Importance**: Ensures that concurrent transactions result in a consistent database state, just like serial execution.
+
+#### Key Concepts
+- **Conflicting Instructions**: Two operations conflict if they:
+  - Belong to different transactions
+  - Access the same data
+  - At least one is a write operation
+
+- **Conflict Equivalence**: Two schedules are conflict equivalent if we can rearrange the non-conflicting operations in one to match the other.
+
+- **Conflict Serializability**: A schedule is conflict serializable if it can be rearranged to a serial schedule by swapping non-conflicting operations.
+
+#### Ensuring Consistency
+- **Recoverable Schedules**: A transaction that reads data must commit after the transaction that wrote the data commits.
+- **Cascadeless Schedules**: A transaction that reads data must wait until the writing transaction commits before it reads the data.
+
+#### Isolation Levels
+- **Serializable**: Ensures full serializability.
+- **Repeatable Read**: Allows reading only committed data but not necessarily serializable.
+- **Read Committed**: Only committed data can be read, but data can change during the transaction.
+- **Read Uncommitted**: Allows reading uncommitted (possibly inconsistent) data.
+
+#### Implementation Methods
+- **Locking**: Use locks on data items and two-phase locking to ensure serializability.
+- **Timestamps**: Order transactions by timestamps, aborting conflicting ones.
+- **Multiple Versions**: Keep multiple data versions to provide snapshot isolation.
+
+#### Examples
+- **PostgreSQL 9.1+**: Uses Serializable Snapshot Isolation.
+- **Oracle, SQL Server**: Have a Serializable isolation level, but it may not always be fully serializable.
 
 
 
