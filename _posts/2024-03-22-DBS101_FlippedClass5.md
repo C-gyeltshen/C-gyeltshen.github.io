@@ -18,7 +18,7 @@ There are many types of normal forms, and some of the normal forms that I have l
 1. First and Second Normal Form
 2. Third Normal Form
 3. Boyce-Codd Normal Form (BCNF)
-4. Fourth Normal Form
+4. Fourth Normal Form.
 
 ## 1. First Normal Form and Second Normal Form 
 

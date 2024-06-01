@@ -47,7 +47,7 @@ CNNs use a series of layers, each of which detects different features of an inpu
 
 A filter of values is slided across the pixel values of an image. When this happens, the values of these pixels are then changed and aggregated based on the matrix multiplication. 
 
-## **What are kernels?**
+## **What are kernels ?**
 
 In Convolutional neural network, the kernel is nothing but a filter that is used to extract the features from the images. 
 

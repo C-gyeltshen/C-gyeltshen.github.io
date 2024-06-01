@@ -48,7 +48,6 @@ Bitmap indexing offers lots of advantages making it important for many reasons.
 
 **Improved query performance :** Bitmap Index allows for efficient filtering and aggregation operations, leading to faster query execution times.
 
-
 **Space efficiency :** Bitmap Index uses compressed bitmaps, which require less storage space compared to traditional index structures.
 
 

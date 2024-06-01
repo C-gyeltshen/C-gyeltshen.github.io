@@ -9,7 +9,9 @@ tags: [DBS101]
 While relational databases offer powerful data management capabilities, creating a simple database from scratch using Python is possible. This approach involves building functionalities similar to those found in relational databases:
 
 * **Data Storage:** A mechanism to store data, often implemented using fixed-size blocks.
+
 * **Free Space Management:** Techniques to track and efficiently utilize available storage space, potentially including defragmentation to consolidate free blocks.
+
 * **Data Manipulation:** Functions to read, write, and allocate data within the storage structure.
 
 **Object-Oriented Approach**

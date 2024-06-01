@@ -15,9 +15,12 @@ At its core, Query Optimization involves the evaluation of different **query pla
 
 Key features of Query Optimization include:
 
-* **Parsing :** Translates SQL queries into a query tree.
+* **Parsing :** Translates SQL queries into a query tree. 
+
 * **Transformation :** Optimizes the query tree through simplification, normalization, and optimization.
+
 * **Cost Estimation :** Evaluates the cost of each potential execution plan.
+
 * **Plan Selection :** The DBMS selects and executes the most cost-effective plan.
 
 **Query Plan ?**

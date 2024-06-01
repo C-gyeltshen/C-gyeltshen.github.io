@@ -8,7 +8,7 @@ tags: [DBS101]
 
 ## Database Administrator (DBA)
 
-A Database Administrator is an IT professional who is in charge of creating, maintaining a secure database, and giving access to authorized users.
+A Database Administrator is an IT professional who is in charge of creating, maintaining a secure database, and giving access to authorized users .
 
 
 ### Roles and Responsibilities of Database Administrator:

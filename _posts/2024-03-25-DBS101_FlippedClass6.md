@@ -15,7 +15,7 @@ A document database stores data in JSON, BSON, or XML documents.
 Documents can be stored and retrieved in a form that is much more similar to a dictionary with keys and value.
 
 
-Elements can be accessed by using the index value that is assigned for faster querying.
+Elements can be accessed by using the index value that is assigned for faster querying 
 
 ### Differences between the relational database model and document based database.
 

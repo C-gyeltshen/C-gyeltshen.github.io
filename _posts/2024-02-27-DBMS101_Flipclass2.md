@@ -9,7 +9,7 @@ tags: [DBS101]
 
 ## Entity Relationship Model (My understanding of ERD)
 
-The Entity Relationship Model (ERM) is a method used to organize and represent pieces of data before creating a database. It helps developers and viewers understand how each piece of data will be connected to one another through a visual representation, such as a diagram.
+The Entity Relationship Model (ERM) is a method used to organize and represent pieces of data before creating a database . It helps developers and viewers understand how each piece of data will be connected to one another through a visual representation, such as a diagram.
 
 
 ### An Entity-Relationship Diagram (ERD)  includes
