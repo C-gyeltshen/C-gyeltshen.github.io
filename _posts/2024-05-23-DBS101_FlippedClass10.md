@@ -81,36 +81,37 @@ Steps involved are:
 
 1. Lets create a database called **test_transaction** 
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10.png>)
+    ![alt text](../image/createDB.png)
 
 2. Lets create a new table call **accounts**
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (1).png>)
+    ![alt text](../image/createTable.png)
 
 3. Inserting values inside the table **accounts**
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (2).png>)
+    ![alt text](../image/inserting.png)
 
 4. ***OK! Now lets begain the transaction***
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
+    ![alt text](../image/begain.png)
 
 5. Start Transaction
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (4).png>)
+    ![alt text](../image/update.png)
+
     ![oh](https://media.tenor.com/dnqXn34Lf2sAAAAj/frustrated-master-shifu.gif)
 
 6. From the accounts A and B, we will update the balance by either deducting or adding to the previous value.
 
     **Initial**
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (2).png>)
+    ![alt text](../image/update.png)
     
     **After updating**
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (4).png>)
+    ![alt text](../image/copy.png)
 
 7. Commiting the changes made in both the accounts and after commiting the changes we cannot perform ROLL BACK operation or undo the changes.
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (5).png>)
+    ![alt text](../image/comit.png)
 
 ## Storage Structure in DB
 
@@ -180,22 +181,22 @@ access.
 
 - Begain the transaction
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
+    ![alt text](../image/begain.png)
 
 - Updating the value of Account_A 
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.04.50 PM.png>)
+    ![alt text](../image/copy.png)
 
 2. **Partially Committed state**
 
 - After completion of all the read and write operation the changes are made in main memory or local buffer. 
 - If the changes are made permanent on the DataBase then the state will change to “committed state” and in case of failure it will go to the “failed state”. 
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.20.25 PM.png>)
+    ![alt text](../image/ui.png)
 
 - Commiting the changes.
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.14.32 PM.png>)
+    ![alt text](../image/comit.png)
 
 3. **Failed to Aborted**
 
@@ -203,15 +204,15 @@ access.
 
 - Initial State before transaction.
 
-    ![alt text](<../image/May 23 Screenshot from flipclass10 (3).png>)
+    ![alt text](../image/begain.png)
 
 - Updating the value in account_B
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.16.12 PM.png>)
+    ![alt text](../image/update.png)
 
 - Performing ROLLBACK
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.23.42 PM.png>)
+    ![alt text](../image/rollback.png)
 
 4. **Active to Aborted**
 
@@ -219,11 +220,11 @@ access.
 
 - Updating the accounts table by adding a new account **D** and inserting value in account **D**.
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.26.00 PM.png>)
+    ![alt text](../image/ok.png)
 
 - Performing ROLLBACK
 
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.23.42 PM.png>)
+    ![alt text](../image/rollback.png)
 
     The Update operation performed to create a new accounts D is ROLLED BACK
 
@@ -232,9 +233,9 @@ access.
 - In some cases, a transaction might move from Partially Committed to Failed if an error is detected after the final statement but before committing.
 
     **Updating the the accounts table** by creating a new Account_E with balance of 1009
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.28.49 PM.png>)
+    ![alt text](../image/insertE.png)
     **Commiting** the transaction.
-    ![alt text](<../image/Screenshot 2024-06-01 at 8.14.32 PM.png>)
+    ![alt text](../image/comit.png)
 
 - If a transaction enters the failed state after the
 system determines that the transaction can no longer
