@@ -28,7 +28,7 @@ Indexing in spatial and temporal data helps users to quickly retrieve data conta
 
 A bitmap index is a data structure used in databases to improve query performance. It stores bitmaps for each unique value in a column. These bitmaps indicate the presence or absence of that value in each row of the table.
 
-![alt text](../bitmap-index_thumbnail.webp)
+![alt text](../image/bitmap-index_thumbnail.webp)
 
 **Understanding Bits :**
 
@@ -62,7 +62,7 @@ Buffer tree is an advanced data structure designed to optimize performance when 
 
 Updating a frequently viewed large dataset can be a major challenge in traditional databases. This is because retrieving data can be time-consuming. Buffer trees address this issue by introducing a layer of buffering, which improves efficiency.
 
-![alt text](../buffer-660.png)
+![alt text](../image/buffer-660.png)
 
 **Why is the buffer tree important ?**
 
