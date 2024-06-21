@@ -79,7 +79,7 @@ This report provides a overview of our journey in developing a clone of Tellonym
      - Developed UI using `.tsx` files and Shadcn UI.
 
    - **Backend**:
-     - Integrated MongoDB and implemented API functionalities.
+     - Integrated Relational DB and implemented API functionalities.
 
 6. **Yonten Kinley Tenzin: Follower and Following Pages**
 
