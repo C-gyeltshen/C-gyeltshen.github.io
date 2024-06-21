@@ -55,7 +55,7 @@ This report provides a overview of our journey in developing a clone of Tellonym
      - Used `.tsx` files and Shadcn UI for components.
 
    - **Backend**:
-     - Managed MongoDB schema design and API endpoints.
+     - Managed Relational DB schema design and API endpoints.
 
 3. **Namgyel Wangchuk: Public Profiles**
 
@@ -87,7 +87,7 @@ This report provides a overview of our journey in developing a clone of Tellonym
      - Managed with `.tsx` files, Shadcn UI, and React Icons.
 
    - **Backend**:
-     - Oversaw CRUD operations, MongoDB management for user relationships, and API implementation.
+     - Oversaw CRUD operations, Relational DB management for user relationships, and API implementation.
 
 
 7. **Collaboration**: Used GitHub for version control and collaboration, ensuring everyone could work on different parts of the project simultaneously. Together we designed the database schemas.
