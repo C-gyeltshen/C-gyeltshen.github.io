@@ -4,9 +4,6 @@ categories: [CAP, Work 1]
 tags: [CAP]
 ---
 
-
-# 
-
 ## Entity Relationships
 
 ### [Database Schema](https://lucid.app/lucidchart/ab48d5c6-8d3b-4d96-974c-b9e08c1514fa/edit?invitationId=inv_51cb4802-82c6-40a9-8815-9fa714dcf867&page=0_0#)
