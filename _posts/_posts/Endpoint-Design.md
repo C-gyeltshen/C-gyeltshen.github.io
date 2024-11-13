@@ -70,6 +70,8 @@ tags: [CAP]
       ```
     - **404 Not Found**: Returns "Store not found" or "No orders found for store" if applicable.
 
+---
+
 ### Endpoint: `POST /store/{store_id}/orders`
 - **Description**: Add a new order manually by the store owner.
 - **Query Logic**: Inserts a new order record for the specified `store_id`.
@@ -97,6 +99,8 @@ tags: [CAP]
       ```
     - **400 Bad Request**: Returns "Incomplete order details, please provide complete information."
 
+---
+
 ### Endpoint: `PATCH /store/{store_id}/orders/{order_id}`
 - **Description**: Update the status of a specific order when delivery is completed.
 - **Query Logic**: Updates the order status for the specified `order_id` under `store_id`.
@@ -110,6 +114,8 @@ tags: [CAP]
       }
       ```
     - **404 Not Found**: Returns "Order not found."
+
+---
 
 ### Endpoint: `GET /store/{store_id}/products`
 - **Description**: Retrieve a list of products for a specific store identified by `store_id`.
@@ -134,6 +140,8 @@ tags: [CAP]
       ```
     - **404 Not Found**: Returns "Products not found" or "No products found for the given store" if applicable.
 
+---
+
 ### Endpoint: `POST /store/{store_id}/products`
 - **Description**: Add a new product to the specified store.
 - **Query Logic**: Adds a new product to the `products` table associated with `store_id`.
@@ -155,6 +163,7 @@ tags: [CAP]
       ```
     - **404 Not Found**: Returns "Store not found" or "Unable to add product" if applicable.
 
+---
 
 ### Endpoint: `GET /store/{store_id}/orders`
 - **Description**: Retrieve orders placed by customers at a specific store.
@@ -182,6 +191,8 @@ tags: [CAP]
       ```
     - **404 Not Found**: Returns "Store not found" or "No orders found for store" if applicable.
 
+---
+
 ### Endpoint: `POST /store/{store_id}/orders`
 - **Description**: Add a new order manually by the store owner.
 - **Query Logic**: Inserts a new order record for the specified `store_id`.
@@ -209,6 +220,8 @@ tags: [CAP]
       ```
     - **400 Bad Request**: Returns "Incomplete order details, please provide complete information."
 
+---
+
 ### Endpoint: `PATCH /store/{store_id}/orders/{order_id}`
 - **Description**: Update the status of a specific order when delivery is completed.
 - **Query Logic**: Updates the order status for the specified `order_id` under `store_id`.
@@ -222,6 +235,8 @@ tags: [CAP]
       }
       ```
     - **404 Not Found**: Returns "Order not found."
+
+---
 
 ### Endpoint: `GET /store/{store_id}/products`
 - **Description**: Retrieve a list of products for a specific store identified by `store_id`.
@@ -246,6 +261,8 @@ tags: [CAP]
       ```
     - **404 Not Found**: Returns "Products not found" or "No products found for the given store" if applicable.
 
+---
+
 ### Endpoint: `POST /store/{store_id}/products`
 - **Description**: Add a new product to the specified store.
 - **Query Logic**: Adds a new product to the `products` table associated with `store_id`.
@@ -266,6 +283,8 @@ tags: [CAP]
       }
       ```
     - **404 Not Found**: Returns "Store not found" or "Unable to add product" if applicable.
+
+---
 
 
 ### Endpoint: `PATCH /store/{store_id}`
